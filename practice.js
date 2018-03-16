@@ -15,8 +15,11 @@
 */
 
 //Code here
-
-
+const me = {
+name: 'Will',
+age: 19
+}
+//alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +29,14 @@
 */
 
 //Code here
-
+const favoriteThings = {
+  band: 'Shinedown',
+  food: 'Pizza',
+  person:'Emilia Clarke',
+  book:'hahahahahahaha',
+  movie: 'Anything Avengers',
+  holiday: 'Quanza'
+}
 
 
 /*
@@ -34,7 +44,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Camaro'
+favoriteThings.brand = 'Lambourghini'
 
 
 /*
@@ -42,7 +53,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -56,15 +68,19 @@
 */
 
 //Code here
+const backPack = {
+  firstPocket: 'chapstick',
+  color: 'black'
+}
 
 
-
+var item = 'firstPocket'
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+//alert(backPack)
 
 
 /*
@@ -74,7 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +113,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +126,9 @@ var user2 = {
 */
 
 //Code Here
+const methodCollection = {
 
+}
 
 
 /*
@@ -118,7 +137,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function (){
+  return alert('hello')
+}
+methodCollection.logHello = function () {
+  console.log('hello')
+}
 
 
 /*
@@ -126,7 +150,8 @@ var user2 = {
 */
 
 //Code Here
-
+// methodCollection.alertHello()
+methodCollection.logHello()
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +162,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson (name,birthday,ssn){
+  return {
+    name,
+    birthday ,
+    ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +179,11 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard (cardNumber, expirationDate, securityCode) {
+  return {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+}
 
